@@ -21,7 +21,7 @@ if [ -x /usr/bin/starship ]; then
 fi
 
 # Advanced command-not-found hook
-source /usr/share/doc/find-the-command/ftc.bash
+#source /usr/share/doc/find-the-command/ftc.bash
 
 ## Useful aliases
 
@@ -93,4 +93,5 @@ alias y="yay"
 alias n="nvim"
 alias lg="lazygit"
 
+export PATH=~/.local/bin:$PATH
 export CHROME_EXECUTABLE="/bin/google-chrome-stable"
