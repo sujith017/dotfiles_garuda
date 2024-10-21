@@ -9,7 +9,8 @@
     "modules-left": [
         "custom/launcher",
         "hyprland/workspaces"
-        ,"wlr/taskbar"
+        ,"wlr/taskbar",
+        "custom/space"
     ],
     // "modules-left": ["custom/launcher", "hyprland/workspaces", "hyprland/window"],
     "modules-right": [
@@ -269,6 +270,10 @@
       "format":"",
       "on-click":"hyprlock",
       "tooltip": false
+    },
+    "custom/space":{
+      "format":"",
+      "on-click":"alacritty -e gdu"
     }
 
 }
