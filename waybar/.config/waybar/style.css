@@ -16,6 +16,7 @@ window#waybar
   transition-property: background-color;
   transition-duration: 0.5s;
   border-radius: 10px;
+    color:grey;
 }
 
 #workspaces button {
