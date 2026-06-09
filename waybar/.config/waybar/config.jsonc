@@ -8,7 +8,7 @@
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
-  // positions generated based on config.ctl //
+  //positions generated based on config.ctl 
   "modules-left": [
     "custom/padd",
     "custom/l_end",
