@@ -6,18 +6,18 @@ export LANG=en_IN.UTF-8
 
 # Load starship prompt if starship is installed
 if [ -x /usr/bin/starship ]; then
-	__main() {
-		local major="${BASH_VERSINFO[0]}"
-		local minor="${BASH_VERSINFO[1]}"
+  __main() {
+    local major="${BASH_VERSINFO[0]}"
+    local minor="${BASH_VERSINFO[1]}"
 
-		if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
-			source <("/usr/bin/starship" init bash --print-full-init)
-		else
-			source /dev/stdin <<<"$("/usr/bin/starship" init bash --print-full-init)"
-		fi
-	}
-	__main
-	unset -f __main
+    if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
+      source <("/usr/bin/starship" init bash --print-full-init)
+    else
+      source /dev/stdin <<<"$("/usr/bin/starship" init bash --print-full-init)"
+    fi
+  }
+  __main
+  unset -f __main
 fi
 
 # Advanced command-not-found hook
@@ -83,7 +83,6 @@ alias jctl="journalctl -p 3 -xb"
 
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-
 
 eval "$(zoxide init bash --cmd 'cd')"
 alias cdi='__zoxide_zi'
