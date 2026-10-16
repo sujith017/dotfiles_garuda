@@ -1,0 +1,4 @@
+max-items 5000
+max-store-size 50MiB
+max-dedupe-search 1000
+preview-width 150

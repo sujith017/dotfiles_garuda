@@ -91,6 +91,7 @@ alias c="clear"
 alias y="yay"
 alias n="nvim"
 alias lg="lazygit"
+alias gu="garuda-update"
 
 export PATH=~/.local/bin:$PATH
 export CHROME_EXECUTABLE="/bin/google-chrome-stable"

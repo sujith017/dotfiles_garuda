@@ -1,10 +1,17 @@
-location=middle
+style = ~/.config/wofi/menu.css
+
+width=600
+height=500
+location=center
 show=drun
-width=650
-height=550
-always_parse_args=true
-show_all=true
-print_command=true
-layer=overlay
+prompt=Apps
+filter_rate=100
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
 insensitive=true
-prompt=
+allow_images=true
+image_size=40
+gtk_dark=true
