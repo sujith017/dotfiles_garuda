@@ -95,3 +95,5 @@ alias gu="garuda-update"
 
 export PATH=~/.local/bin:$PATH
 export CHROME_EXECUTABLE="/bin/google-chrome-stable"
+
+. "$HOME/.local/bin/env"
